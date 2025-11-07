@@ -1,0 +1,6 @@
+replicaCount: 1
+image:
+  repository: registry-1.docker.io/lpintofsgrp/backend-api
+  tag: "{{ tag }}"
+service:
+  port: 8080
