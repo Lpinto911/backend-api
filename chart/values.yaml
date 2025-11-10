@@ -1,6 +1,8 @@
-replicaCount: 1
-image:
-  repository: registry-1.docker.io/lpintofsgrp/backend-api
-  tag: "{{ tag }}"
-service:
-  port: 8080
+backend:
+  replicaCount: 1
+  image:
+    repository: registry-1.docker.io/lpintofsgrp/backend-api
+    tag: "{{ tag }}"
+  service:
+    port: 8080      # Puerto del Service
+    targetPort: 8081 # Puerto del contenedor

@@ -8,5 +8,5 @@ spec:
   selector:
     app: backend-api
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: {{ .Values.backend.service.port }}        # Puerto del Service
+      targetPort: {{ .Values.backend.service.targetPort }} # Puerto real del contenedor
